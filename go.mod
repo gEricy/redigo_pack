@@ -1,4 +1,4 @@
-module redigo_pack
+module github.com/gEricy/redigo_pack
 
 go 1.16
 
