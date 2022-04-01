@@ -2,4 +2,4 @@
 redigo pack
 
 
-go get github.com/gjawe/redigo_pack
+go get github.com/gEricy/redigo_pack
