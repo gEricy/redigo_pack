@@ -70,9 +70,9 @@ func (z *ZsetRds) ZRemRangeByScore(key string, min, max interface{}) *Reply {
 
 /* --------- 改 --------- */
 
-// 为成员 member 的 score 值加上增量 incRement
-func (z *ZsetRds) ZIncrBy(key string, incRement, member interface{}) *Reply {
-	return NewReply(z.conn.Do("ZIncrBy", key, incRement, member))
+// 为成员 member 的 score 值加上增量 increment
+func (z *ZsetRds) ZIncrBy(key string, increment, member interface{}) *Reply {
+	return NewReply(z.conn.Do("ZIncrBy", key, increment, member))
 }
 
 /* --------- 查 --------- */
