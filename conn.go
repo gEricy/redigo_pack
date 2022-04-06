@@ -15,6 +15,7 @@ type RedisDB struct {
 	Zset   ZsetRds
 	Bit    BitRds
 	Db     DbRds
+	Script ScriptRds
 }
 
 func NewRedisDBWithConfig(ip, port string) (*RedisDB, error) {
@@ -49,6 +50,9 @@ func NewRedisDBWithConfig(ip, port string) (*RedisDB, error) {
 			conn: conn,
 		},
 		Db: DbRds{
+			conn: conn,
+		},
+		Script: ScriptRds{
 			conn: conn,
 		},
 	}
